@@ -8,7 +8,7 @@ part 'weather_api_service.g.dart';
 abstract class WeatherApiService {
   factory WeatherApiService(Dio dio) = _WeatherApiService;
 
-  @GET('/weather')
+  @GET('/weather')  //to get current weather data
    Future<HttpResponse<WeatherModel>> getWeather(
     @Query('lat') String lat,
     @Query('lon') String lon,
@@ -16,7 +16,7 @@ abstract class WeatherApiService {
     @Query('units') String unit,
   );
 
-  @GET('/forecast')
+  @GET('/forecast')  // to get 5 day weather forecast data
   Future<HttpResponse<ForecastModel>> getForecast(
     @Query('lat') String lat,
     @Query('lon') String lon,

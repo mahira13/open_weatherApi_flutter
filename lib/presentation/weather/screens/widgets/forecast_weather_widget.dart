@@ -27,7 +27,7 @@ class ForecastWeatherWidget extends StatelessWidget {
     return BlocBuilder<WeatherForecastBloc, WeatherForecastState>(
       bloc: weatherForecastBloc,
       builder: (context, state) {
-        final items = [0, 8, 16, 24, 32];
+        final items = [0, 8, 16, 24, 32];  // 3 hour interval per day for 5 days
         // if (state is WeatherLoadInProgress) {
         //   return loading();
         // } else
