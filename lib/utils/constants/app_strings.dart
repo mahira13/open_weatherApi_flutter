@@ -1,0 +1,9 @@
+const appTitle = "Weather App";
+const loadingContent = "Fetching weather data...";
+const celcius = "°C";
+const humidity = "Humidity";
+const wind = "Wind";
+const pressure = "Pressure";
+const fahrenheit = "°F";
+const somethingWrong = "Sorry, something went wrong!";
+const retryButtonText = "Retry";
